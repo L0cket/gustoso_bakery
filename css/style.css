@@ -962,6 +962,11 @@
     .breakfast_flair_item:nth-child(3){
         display: none;
     }
+
+    .flair-content_btn{
+        background-color: #a47d5e;
+        color: #fff;
+    }
 }
 
 @media(max-width: 716px){
@@ -1034,7 +1039,6 @@
     }
 
     .cakes_text{
-        padding: 0px 10px;
         font-size: 17px;
     }
 
