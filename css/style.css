@@ -819,6 +819,10 @@
         margin-bottom: 50px;
     }
 
+    .cakes_images_row{
+        margin: 0 auto;
+    }
+
     .pancakes_row{
         padding: 0px;
     }
