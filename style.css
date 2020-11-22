@@ -1,0 +1,1161 @@
+/* ========== ПОДКЛЮЧЕНИЕ ШРИФТОВ или ФАЙЛОВ ========== */
+@font-face{
+    font-family: Scriptina;
+    src: url('../fonts/scriptina.regular.ttf');
+}
+
+@font-face{
+    font-family: 'Proxima Nova';
+    src: url(../fonts/ProximaNova-Regular.ttf);
+}
+/* ========== ПОДКЛЮЧЕНИЕ END ========== */
+
+/*=============================== BODY =============================== */
+    /* ==================== Контент страницы ==================== */
+
+
+.container{
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+
+/* ----------------------------------------------------------------- */
+    /* ==================== ШАПКА САЙТА ==================== */
+/* ----------------------------------------------------------------- */
+
+
+.header{
+    background-image: url('../img/header_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.header_menu{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 18px 0px 26px 0px;
+}
+
+.header_menu_content{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: Scriptina;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.logo_link{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header_menu_nav{
+    font-family: Alegreya;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 5px;
+}
+
+.header_ul{
+    display: flex;
+}
+
+.header_li{
+    margin: 0px 43px;
+    transition: 0.3s;
+}
+
+.header_li:first-child{
+    margin-left: 0px;
+}
+
+.header_li:last-child{
+    margin-right: 0px;
+}
+
+.header_li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header_menu_link:hover{
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+.header_li::after{
+    content: '~';
+    display: inline;
+    position: absolute;
+    margin-left: 35px;
+}
+
+.header_li:last-child::after{
+    content: '';
+    display: inline;
+    position: absolute;
+    margin-left: 0px;
+}
+
+.header_social{
+    margin-top: 5px;
+}
+
+.header_social_icon{
+    transition: 0.2s;
+}
+
+.header_social_link{
+    margin: 0px 15px;
+}
+
+.header_social_link:first-child{
+    margin-left: 0;
+}
+
+.header_social_link:last-child{
+    margin-right: 0;
+}
+
+.header_social_icon:hover{
+    transform: scale(1.2);
+}
+
+.header_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 225px 0px;
+}
+
+.header_title{
+    font-size: 92px;
+    font-family: Playfair display;
+    text-align: center;
+    letter-spacing: 7px;
+    text-shadow: 0px 1px 1px #000;
+}
+
+.header_elements{
+    padding: 73px 0px;
+}
+
+.header_description{
+    font-family: 'Proxima Nova';
+    font-size: 24px;
+    text-align: center;
+    max-width: 545px;
+    margin-bottom: 70px;
+    letter-spacing: 2px;
+    text-shadow: 0px 1px 1px #000;
+    line-height: 1.5em;
+}
+
+.header_content_button{
+    background-color: rgba(86, 83, 76, 0.5);
+    color: #fff;
+    font-family: Alegreya;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 50px;
+    border: 1px dashed #9e9c93;
+    letter-spacing: 5px;
+    transition: 0.3s;
+}
+
+.header_content_button:hover{
+    background-color: rgba(86, 83, 76, 1);
+}
+
+.cogwheel{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.cogwheel_content{
+    position: relative;
+}
+
+.cogwheel_border{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: calc(50% - 53px);
+}
+
+.cogwheel_bread{
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: calc(50% - 40px);
+}
+
+.bread{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: calc(50% - 22px);
+}
+
+
+/* ----------------------------------------------------------------- */
+    /* ==================== ВТОРОЙ БЛОК ==================== */
+/* ----------------------------------------------------------------- */
+
+
+.section_cakes{
+    background-image: url('../img/texture_img.jpg');
+    background-size: cover;
+    background-position: top;
+    margin-top: 10px;
+    padding: 95px 0px 105px 0px;
+}
+
+.cakes_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cakes_content{
+    max-width: 485px;
+    text-align: center;
+}
+
+.cakes_titles{
+    margin-bottom: 70px;
+}
+
+.title_style{
+    font-family: Alegreya;
+    font-weight: bold;
+}
+
+.cakes_title{
+    font-size: 54px;
+    color: #56534c;
+    margin-bottom: 10px;
+}
+
+.cakes_description{
+    font-size: 16px;
+    color: #a47d5e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+}
+
+.cakes_text{
+    font-family: 'Proxima Nova';
+    color: #56534c;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.cakes_chef{
+    margin-top: 45px;
+}
+
+.cakes_chef_title{
+    color: #56534c;
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+.cakes_chef_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chef_person{
+    font-family: Alegreya;
+    font-size: 24px;
+    padding: 0px 22px;
+    position: relative;
+}
+
+.chef_person::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 111px;
+    height: 1px;
+    background-color: #d7d5ca;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.chef_person::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 111px;
+    height: 1px;
+    background-color: #d7d5ca;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.chef_img{
+    width: 110px;
+    height: 110px;
+    background-image: url('../img/chef.jpg');
+    background-position: left 24% top 5%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    margin: 0px 20px;
+}
+
+.cakes_quote{
+    padding: 0px 40px;
+}
+
+.cakes_quotes{
+    font-family: 'Times New Roman';
+    font-size: 60px;
+    color: #56534c;
+    text-align: left;
+    opacity: 0.5;
+    height: 20px;
+}
+
+.cakes_quotes:last-child{
+    text-align: right;
+}
+
+.cakes_quote_text{
+    font-family: Scriptina;
+    font-size: 24px;
+    color: #a47d5e;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 35px;
+    padding: 0px 62px;
+}
+
+.cakes_images{
+    position: relative;
+}
+
+.cakes_images_logo{
+    height: 250px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: calc(50% - 125px);
+}
+
+.cakes_images_logo_content{
+    position: relative;
+    height: 250px;
+}
+
+.cakes_logo_img{
+    opacity: 0.94;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.cakes_logo_text{
+    font-family: Alegreya;
+    font-size: 30px;
+    line-height: 36px;
+    color: #c9b176;
+    max-width: 155px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: calc(50% - 33px);
+}
+
+.cakes_images_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cakes_images_column{
+    flex: 0 0 33.333%;
+}
+
+.cakes_images_row_item{
+    max-width: 100%;
+    height: 250px;
+    margin: 10px;
+    padding: 6px;
+}
+
+.item_flour{
+    background-image: url('../img/flour.jpg');
+}
+
+.item_long_loaf{
+    background-image: url('../img/long_loaf.jpg');
+    background-position: left 25% top 0%;
+}
+
+.item_piece_cake{
+    background-image: url('../img/piece_of_cake.jpg');
+    background-position: left 10% top 45%;
+}
+
+.item_truffel{
+    background-image: url('../img/truffel.jpg');
+    background-position: left 15% top 90%;
+}
+
+.cakes_images_row_item_border{
+    width: 275px;
+    height: 100%;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+}
+
+
+/* ----------------------------------------------------------------- */
+    /* ==================== ТРЕТИЙ БЛОК ==================== */
+/* ----------------------------------------------------------------- */
+
+
+.section_pancakes{
+    background-image: url('../img/wheat_background.jpg');
+    background-repeat: no-repeat;
+    background-position: left 0% top 3%;
+    background-size: cover;
+    padding: 140px 0px 108px 0px;
+}
+
+.pancakes_content{
+    position: relative;
+}
+
+.pancakes_row{
+    display: flex;
+    justify-content: center;
+    padding: 0px 200px 0px 95px;
+}
+
+.pancakes_left_block{
+    background-image: url('../img/pancakes.jpg');
+    background-position: left 60% top 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 43.4%;
+    position: relative;
+    box-shadow: inset -1px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.pancakes_left_block_stars{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(50% - 70px);
+    left: 30px;
+}
+
+.stars{
+    width: 21px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.stars:last-child{
+    margin-bottom: 0;
+}
+
+.pancakes_menu{
+    display: flex;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: calc(50% - 25px);
+    right: -25px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+.pancakes_menu_line{
+    width: 1px;
+    height: 16px;
+    background-color: #d8bba3;
+    margin-right: 3px;
+}
+
+.pancakes_menu_line:last-child{
+    margin-right: 0px;
+}
+
+.pancakes_right_block{
+    background-image: url('../img/mill.png');
+    background-repeat: no-repeat;
+    background-position: left 100% top 97%;
+    background-color: #fff;
+    padding: 85px 60px 40px 60px;
+    width: 56.6%;
+    position: relative;
+}
+
+.pancakes_titles{
+    margin-bottom: 70px;
+}
+
+.pancakes_text{
+    margin-bottom: 105px;
+    text-align: justify;
+}
+
+.pancakes_slider{
+    display: flex;
+    align-items: center;
+}
+
+.pancakes_slider_buttons{
+    border: 2px solid #d9bda6;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.pancakes_slider_button_arrow{
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #d9bda6;
+    border-right: 1px solid #d9bda6;
+    transform: rotate(45deg);
+    margin-left: -3px;
+}
+
+.first_arrow{
+    transform: rotate(-135deg);
+    margin-left: 0;
+    margin-right: -3px;
+}
+
+.pancakes_slider_content{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.pancakes_slider_item{
+    background-image: url('../img/sandwich.jpg');
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.pancakes_slider_item:first-child{
+    background-image: url('../img/sandwich.jpg');
+    background-position: left 38% top 45%;
+}
+
+.pancakes_slider_item:nth-child(2){
+    background-image: url('../img/strawberry.jpg');
+    background-position: left 55% top 95%;
+}
+
+.pancakes_slider_item:last-child{
+    background-image: url('../img/salad.jpg');
+    background-position: left 99% top 62%;
+}
+
+.pancakes_ready{
+    background-image: url('../img/field.jpg');
+    background-position: left 5% top 5%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    font-family: Alegreya;
+    font-weight: bold;
+    text-align: center;
+    right: -100px;
+    top: -43px;
+    box-shadow: 1px 1px 45px rgba(105, 80, 58, 0.6);
+}
+
+.pancakes_ready_title{
+    font-size: 16px;
+    color: #a47d5e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 35px;
+    margin-bottom: 43px;
+}
+
+.pancakes_ready_minutes{
+    color: #dfc691;
+    font-size: 90px;
+    margin-top: -25px;
+    margin-bottom: 4px;
+}
+
+
+/* ----------------------------------------------------------------- */
+    /* ==================== ЧЕТВЁРТЫЙ БЛОК ==================== */
+/* ----------------------------------------------------------------- */
+
+
+.section_breakfast{
+    background-image: url('../img/whean_flour.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 10% top 25%;
+    padding: 90px 0px 70px 0px;
+    text-align: center;
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.breakfast_content{
+    position: relative;
+    display: flex;
+    padding-left: 202px;
+    justify-content: space-between;
+}
+
+.breakfast_menu_titles{
+    margin-bottom: 68px;
+}
+
+.breakfast_title{
+    color: #fff;
+    font-size: 54px;
+    letter-spacing: 3px;
+    margin-bottom: 9px;
+}
+
+.breakfast_description{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #c8a593;
+}
+
+.breakfast_menu_item{
+    max-width: 310px;
+    margin-bottom: 13px;
+}
+
+.breakfast_item_titles{
+    margin-bottom: 14px;
+}
+
+.breakfast_item_title{
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.breakfast_menu_items_info{
+    font-family: 'Proxima Nova';
+    color: #c2beba;
+}
+
+.breakfast_price{
+    font-family: Alegreya;
+    font-size: 36px;
+    color: #dfc691;
+    margin-bottom: 13px;
+}
+
+.breakfast_flair_item{
+    background-color: #f3f1e9;
+    padding: 10px;
+}
+
+.breakfast_flair_content{
+    border: 1px dashed #9e9c93;
+    padding: 43px 0px 54px 0px;
+    font-family: Alegreya;
+    font-weight: bold;
+}
+
+.flair_item_info_texts{
+    color: #56534c;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 14px;
+}
+
+.flair_info_lines{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 78px;
+}
+
+.flair_info_circle{
+    width: 9px;
+    height: 9px;
+    border: 1px solid #c2beba;
+    border-radius: 50%;
+}
+
+.flair_info_pretzel{
+    padding: 9px;
+    border-radius: 50%;
+    border: 1px solid #c2beba;
+}
+
+.flair_line{
+    width: 142px;
+    height: 1px;
+    background-color: #c2beba;
+}
+
+.flair_body{
+    padding: 0px 44px;
+}
+
+.flair_content_title{
+    font-size: 44px;
+    color: #56534c;
+    line-height: 1.3em;
+    margin-bottom: 44px;
+    overflow: hidden;
+}
+
+.flair_content_text{
+    font-family: 'Proxima Nova';
+    font-weight: normal;
+    color: #56534c;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    overflow: hidden;
+    margin-bottom: 55px;
+}
+
+.flair-content_btn{
+    color: #a47d5e;
+    border: 1px solid #9e9c93;
+    padding: 18px 70px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.flair-content_btn:hover{
+    background-color: #a47d5e;
+    color: #fff;
+}
+
+.breakfast_flair_item{
+    width: 440px;
+    position: absolute;
+    right: 0;
+    z-index: 50;
+    box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.6);
+}
+
+.breakfast_flair_item:nth-child(2){
+    transform: scale(0.9);
+    right: -2.7%;
+    z-index: 49;
+}
+
+.breakfast_flair_item:nth-child(3){
+    transform: scale(0.8);
+    right: -5.4%;
+    z-index: 48;
+}
+
+    /* ==================== Контент страницы END ==================== */
+/*============================== BODY END =============================== */
+
+
+/* ==================== @media запросы ==================== */ 
+
+    /* ========== КВАДРАТИКИ ========== */
+@media (max-width: 1300px){
+    .container{
+        max-width: 960px;
+    }
+
+    .header_social{
+        display: none;
+    }
+
+    .cakes_content{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .cakes_images_row{
+        margin: 0 auto;
+    }
+
+    .pancakes_row{
+        padding: 0px;
+    }
+
+    .pancakes_ready{
+        display: none;
+    }
+
+    .section_pancakes{
+        padding: 70px 0px 54px 0px;
+    }
+}
+    /* ========== ПЛАНШЕТЫ ========== */
+@media(max-width: 1020px){
+    .container{
+        max-width: 760px;
+    }
+
+    .header_menu_nav{
+        display: none;
+    }
+
+    .header_content{
+        padding: 112.5px 0;
+    }
+
+    .header_content_button{
+        background-color: rgba(86, 83, 76, 1);
+        color: #fff;
+        font-family: Alegreya;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        padding: 20px 50px;
+        border: 1px dashed #9e9c93;
+        letter-spacing: 5px;
+        transition: 0.3s;
+    }
+
+    .header_elements{
+        padding: 60px 0px;
+    }
+
+    .section_cakes{
+        padding: 90px 0 50px 0px;
+    }
+
+    .cakes_titles{
+        margin-bottom: 35px;
+    }
+
+    .cakes_content{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .cakes_images{
+        margin: 0 auto;
+    }
+
+    .cakes_images_logo{
+        top: calc(50% - 123.5px);
+    }
+
+    .section_pancakes{
+        padding: 50px 0px;
+    }
+
+    .pancakes_row{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .pancakes_left_block{
+        width: 100%;
+        height: 412px;
+        order: 2;
+        box-shadow: none;
+    }
+
+    .pancakes_menu{
+        display: none;
+    }
+    
+    .pancakes_right_block{
+        width: 100%;
+        padding-top: 55px;
+        order: 1;
+    }
+
+    .pancakes_ready{
+        display: none;
+    }
+
+    .pancakes_slider_buttons{
+        padding: 25px;
+    }
+
+    .pancakes_slider_button_arrow{
+        width: 12px;
+        height: 12px;
+    }
+
+    .pancakes_slider_item{
+        width: 120px;
+        height: 120px;
+    }
+
+    .pancakes_titles{
+        margin-bottom: 35px;
+    }
+
+    .pancakes_text{
+        margin-bottom: 52.5px;
+    }
+
+    .section_breakfast{
+        padding: 45px 0 35px 0;
+    }
+
+    .breakfast_content{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .breakfast_flair_item{
+        position: static;
+    }
+
+    .breakfast_flair_item:nth-child(2){
+        display: none;
+    }
+    
+    .breakfast_flair_item:nth-child(3){
+        display: none;
+    }
+
+    .flair-content_btn{
+        background-color: #a47d5e;
+        color: #fff;
+    }
+}
+
+@media(max-width: 716px){
+    .breakfast_content{
+        justify-content: center;
+    }
+
+    .breakfast_menu{
+        margin-bottom: 20px;
+    }
+}
+    /* ========== MINI ПЛАНШЕТЫ И СМАРТФОНЫ ========== */
+@media(max-width: 600px){
+    .container{
+        max-width: 100%;
+    }
+
+    .header_content{
+        padding: 56px 0;
+    }
+
+    .header_elements{
+        padding: 50px 0px;
+    }
+
+    .section_cakes{
+        padding-bottom: 60px;
+    }
+
+    .cakes_images_row{
+        flex-direction: column;
+    }
+
+    .cakes_images_row_item{
+        width: 100%;
+        height: 170px;
+    }
+
+    .section_pancakes{
+        background-image: none;
+        padding: 0px 0px;
+    }
+
+    .pancakes_right_block{
+        padding: 30px 20px;
+    }
+
+    .pancakes_slider_buttons{
+        padding: 20px;
+    }
+
+    .pancakes_slider_button_arrow{
+        width: 9px;
+        height: 9px;
+    }
+
+    .pancakes_slider_item{
+        width: 90px;
+        height: 90px;
+    }
+}
+    /* ========== СМАРТФОНЫ ========== */
+@media(max-width: 475px){
+    .header_title{
+        font-size: 80px;
+    }
+
+    .header_description{
+        font-size: 22px;
+    }
+
+    .cakes_images_row_item{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .item_piece_cake{
+        margin-bottom: 30px;
+    }
+
+    .item_long_loaf{
+        margin-top: 30px;
+    }
+
+    .item_truffel{
+        margin-bottom: 0px;
+    }
+    
+    .cakes_logo_img{
+        width: 200px;
+        height: 200px;
+        top: calc(50% - 100px);
+    }
+
+    .cakes_logo_text{
+        font-size: 28px;
+    }
+
+    .section_breakfast{
+        padding-bottom: 0px;
+    }
+
+    .breakfast_flair_item{
+        width: 100%;
+    }
+}
+
+@media(max-width: 425px){
+    .flair_content_title{
+        font-size: 38px;
+    }
+
+    .flair_info_lines{
+        margin-bottom: 39px;
+    }
+
+    .flair_line{
+        width: 50%;
+    }
+
+    .flair_info_circle{
+        width: 10px;
+        height: 10px;
+    }
+
+    .cakes_text{
+        font-size: 16px;
+    }
+
+    .cakes_chef_info{
+        flex-direction: column;
+    }
+
+    .cakes_chef_info .chef_img{
+        margin: 30px 0;
+    }
+}
+
+@media(max-width: 395px){
+    .chef_img{
+        margin: 0 10px;
+    }
+
+    .pancakes_slider_item:last-child{
+        display: none;
+    }
+}
+
+    /* ========== МЕЛКИЕ СМАРТФОНЫ ========== */
+
+@media(max-width: 320px){
+    .header_menu{
+        padding: 5px 5px 25px 5px;
+    }
+
+    .header_content{
+        padding-top: 28px;
+    }
+
+    .header_title{
+        font-size: 60px;
+    }
+
+    .header_elements{
+        padding: 25px 0px;
+    }
+
+    .header_description{
+        font-size: 22px;
+    }
+
+    .header_content_button{
+        margin-bottom: 60px;
+    }
+
+    .cakes_logo_text{
+        font-size: 25px;
+    }
+
+    .cakes_title{
+        font-size: 50px;
+    }
+
+    .breakfast_title{
+        font-size: 50px;
+    }
+
+    .flair_body{
+        padding: 0px 40px;
+    }
+}
+
+/* ========== @media запросы ========== */
