@@ -1,3 +1,4 @@
+/* ========== ПОДКЛЮЧЕНИЕ ШРИФТОВ или ФАЙЛОВ ========== */
 @font-face{
     font-family: Scriptina;
     src: url('../fonts/scriptina.regular.ttf');
@@ -7,27 +8,22 @@
     font-family: 'Proxima Nova';
     src: url(../fonts/ProximaNova-Regular.ttf);
 }
+/* ========== ПОДКЛЮЧЕНИЕ END ========== */
+
+/*=============================== BODY =============================== */
+    /* ==================== Контент страницы ==================== */
+
 
 .container{
     max-width: 1260px;
     margin: 0 auto;
 }
 
-@media (max-width: 1300px){
-    .container{
-        max-width: 960px;
-    }
 
-    /*
-    .header_menu_nav{
-        display: none;
-    }
-    */
+/* ----------------------------------------------------------------- */
+    /* ==================== ШАПКА САЙТА ==================== */
+/* ----------------------------------------------------------------- */
 
-    .header_social{
-        display: none;
-    }
-}
 
 .header{
     background-image: url('../img/header_background.jpg');
@@ -55,6 +51,12 @@
     letter-spacing: 5px;
 }
 
+.logo_link{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
 .header_menu_nav{
     font-family: Alegreya;
     text-transform: uppercase;
@@ -68,6 +70,7 @@
 
 .header_li{
     margin: 0px 43px;
+    transition: 0.3s;
 }
 
 .header_li:first-child{
@@ -81,6 +84,11 @@
 .header_li a{
     color: #fff;
     text-decoration: none;
+}
+
+.header_menu_link:hover{
+    text-decoration: underline;
+    text-decoration-color: #fff;
 }
 
 .header_li::after{
@@ -102,15 +110,23 @@
 }
 
 .header_social_icon{
+    transition: 0.2s;
+}
+
+.header_social_link{
     margin: 0px 15px;
 }
 
-.header_social_icon:first-child{
+.header_social_link:first-child{
     margin-left: 0;
 }
 
-.header_social_icon:last-child{
+.header_social_link:last-child{
     margin-right: 0;
+}
+
+.header_social_icon:hover{
+    transform: scale(1.2);
 }
 
 .header_content{
@@ -202,6 +218,12 @@
     top: calc(50% - 22px);
 }
 
+
+/* ----------------------------------------------------------------- */
+    /* ==================== ВТОРОЙ БЛОК ==================== */
+/* ----------------------------------------------------------------- */
+
+
 .section_cakes{
     background-image: url('../img/texture_img.jpg');
     background-size: cover;
@@ -212,7 +234,9 @@
 
 .cakes_row{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .cakes_content{
@@ -348,7 +372,7 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: calc(50% - 160px);
+    top: calc(50% - 125px);
 }
 
 .cakes_images_logo_content{
@@ -381,11 +405,17 @@
 
 .cakes_images_row{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
+}
+
+.cakes_images_column{
+    flex: 0 0 33.333%;
 }
 
 .cakes_images_row_item{
-    width: 275px;
+    max-width: 100%;
     height: 250px;
     margin: 10px;
     padding: 6px;
@@ -411,11 +441,17 @@
 }
 
 .cakes_images_row_item_border{
-    width: 100%;
+    width: 275px;
     height: 100%;
     border: 5px solid #fff;
     box-sizing: border-box;
 }
+
+
+/* ----------------------------------------------------------------- */
+    /* ==================== ТРЕТИЙ БЛОК ==================== */
+/* ----------------------------------------------------------------- */
+
 
 .section_pancakes{
     background-image: url('../img/wheat_background.jpg');
@@ -591,6 +627,12 @@
     margin-bottom: 4px;
 }
 
+
+/* ----------------------------------------------------------------- */
+    /* ==================== ЧЕТВЁРТЫЙ БЛОК ==================== */
+/* ----------------------------------------------------------------- */
+
+
 .section_breakfast{
     background-image: url('../img/whean_flour.jpg');
     background-size: cover;
@@ -755,7 +797,46 @@
     z-index: 48;
 }
 
-@media(max-width: 996px){
+    /* ==================== Контент страницы END ==================== */
+/*============================== BODY END =============================== */
+
+
+/* ==================== @media запросы ==================== */ 
+
+    /* ========== КВАДРАТИКИ ========== */
+@media (max-width: 1300px){
+    .container{
+        max-width: 960px;
+    }
+
+    .header_social{
+        display: none;
+    }
+
+    .cakes_content{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .cakes_images_row{
+        margin: 0 auto;
+    }
+
+    .pancakes_row{
+        padding: 0px;
+    }
+
+    .pancakes_ready{
+        display: none;
+    }
+
+    .section_pancakes{
+        padding: 70px 0px 54px 0px;
+    }
+}
+    /* ========== ПЛАНШЕТЫ ========== */
+@media(max-width: 1020px){
     .container{
         max-width: 760px;
     }
@@ -798,15 +879,9 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 50px;
-    
-    }
-
-    .cakes_row{
-        display: block;
     }
 
     .cakes_images{
-        max-width: 590px;
         margin: 0 auto;
     }
 
@@ -815,7 +890,7 @@
     }
 
     .section_pancakes{
-        padding: 20px;
+        padding: 50px 0px;
     }
 
     .pancakes_row{
@@ -871,18 +946,35 @@
     }
 
     .breakfast_content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
         padding: 0;
+        align-items: center;
     }
 
-    .breakfast_flair{
+    .breakfast_flair_item{
+        position: static;
+    }
+
+    .breakfast_flair_item:nth-child(2){
+        display: none;
+    }
+    
+    .breakfast_flair_item:nth-child(3){
         display: none;
     }
 }
 
-@media(max-width: 575px){
+@media(max-width: 716px){
+    .breakfast_content{
+        justify-content: center;
+    }
+
+    .breakfast_menu{
+        margin-bottom: 20px;
+    }
+}
+    /* ========== MINI ПЛАНШЕТЫ И СМАРТФОНЫ ========== */
+@media(max-width: 600px){
     .container{
         max-width: 100%;
     }
@@ -899,7 +991,12 @@
         padding-bottom: 60px;
     }
 
+    .cakes_images_row{
+        flex-direction: column;
+    }
+
     .cakes_images_row_item{
+        width: 100%;
         height: 170px;
     }
 
@@ -926,6 +1023,87 @@
         height: 90px;
     }
 }
+    /* ========== СМАРТФОНЫ ========== */
+@media(max-width: 475px){
+    .header_title{
+        font-size: 80px;
+    }
+
+    .header_description{
+        font-size: 22px;
+    }
+
+    .cakes_text{
+        padding: 0px 10px;
+        font-size: 17px;
+    }
+
+    .cakes_images_row_item{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .item_piece_cake{
+        margin-bottom: 30px;
+    }
+
+    .item_long_loaf{
+        margin-top: 30px;
+    }
+
+    .item_truffel{
+        margin-bottom: 0px;
+    }
+    
+    .cakes_logo_img{
+        width: 200px;
+        height: 200px;
+        top: calc(50% - 100px);
+    }
+
+    .cakes_logo_text{
+        font-size: 28px;
+    }
+
+    .section_breakfast{
+        padding-bottom: 0px;
+    }
+
+    .breakfast_flair_item{
+        width: 100%;
+    }
+}
+
+@media(max-width: 425px){
+    .flair_content_title{
+        font-size: 38px;
+    }
+
+    .flair_info_lines{
+        margin-bottom: 39px;
+    }
+
+    .flair_line{
+        width: 50%;
+    }
+
+    .flair_info_circle{
+        width: 10px;
+        height: 10px;
+    }
+
+    .cakes_text{
+        font-size: 16px;
+    }
+
+    .cakes_chef_info{
+        flex-direction: column;
+    }
+
+    .cakes_chef_info .chef_img{
+        margin: 30px 0;
+    }
+}
 
 @media(max-width: 395px){
     .chef_img{
@@ -936,6 +1114,8 @@
         display: none;
     }
 }
+
+    /* ========== МЕЛКИЕ СМАРТФОНЫ ========== */
 
 @media(max-width: 320px){
     .header_menu{
@@ -962,23 +1142,6 @@
         margin-bottom: 60px;
     }
 
-    .cakes_chef_info{
-        display: block;
-    }
-
-    .chef_img{
-        margin: 30px auto;
-    }
-
-    .cakes_images_row_item{
-        height: 140px;
-    }
-
-    .cakes_logo_img{
-        max-width: 170px;
-        top: calc(50% - 80.5px);
-    }
-
     .cakes_logo_text{
         font-size: 25px;
     }
@@ -990,4 +1153,10 @@
     .breakfast_title{
         font-size: 50px;
     }
+
+    .flair_body{
+        padding: 0px 40px;
+    }
 }
+
+/* ========== @media запросы ========== */
