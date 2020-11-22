@@ -819,10 +819,6 @@
         margin-bottom: 50px;
     }
 
-    .cakes_images_row{
-        margin: 0 auto;
-    }
-
     .pancakes_row{
         padding: 0px;
     }
@@ -948,7 +944,6 @@
     .breakfast_content{
         flex-wrap: wrap;
         padding: 0;
-        align-items: center;
     }
 
     .breakfast_flair_item{
@@ -1036,10 +1031,6 @@
 
     .header_description{
         font-size: 22px;
-    }
-
-    .cakes_text{
-        font-size: 17px;
     }
 
     .cakes_images_row_item{
