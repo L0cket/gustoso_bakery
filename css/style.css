@@ -251,20 +251,22 @@
 .title_style{
     font-family: Alegreya;
     font-weight: bold;
+    font-size: 44px;
+}
+
+.description_style{
+    font-family: Alegreya;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #a47d5e;
+    line-height: 1.4em;
+    letter-spacing: 0.5px;
 }
 
 .cakes_title{
-    font-size: 54px;
     color: #56534c;
     margin-bottom: 10px;
-}
-
-.cakes_description{
-    font-size: 16px;
-    color: #a47d5e;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 1.4em;
 }
 
 .cakes_text{
@@ -627,6 +629,10 @@
     margin-bottom: 4px;
 }
 
+.pancakes_ready_info{
+    color: #979285;
+}
+
 
 /* ----------------------------------------------------------------- */
     /* ==================== ЧЕТВЁРТЫЙ БЛОК ==================== */
@@ -662,7 +668,9 @@
 }
 
 .breakfast_description{
-    font-size: 15px;
+    font-family: Alegreya;
+    font-weight: bold;
+    font-size: 17px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: #c8a593;
@@ -746,7 +754,6 @@
 }
 
 .flair_content_title{
-    font-size: 44px;
     color: #56534c;
     line-height: 1.3em;
     margin-bottom: 44px;
@@ -797,6 +804,227 @@
     z-index: 48;
 }
 
+
+/* ----------------------------------------------------------------- */
+    /* ==================== ПЯТЫЙ БЛОК ==================== */
+/* ----------------------------------------------------------------- */
+
+
+.section_sandwich{
+    background-color: #f3f1e9;
+    background-image: url('../img/country.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 100px 0 118px 0;
+}
+
+.sandwich_titles{
+    text-align: center;
+}
+
+.sandwich_title{
+    color: #56534c;
+    margin-bottom: 10px;
+}
+
+.sandwich_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sandwich_item{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sandwich_item:last-child{
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.sandwich_item_img{
+    background-image: url('../img/grains_of_wheat.jpg');
+    background-position: left 80% top 85%;
+    max-width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    margin: 0 auto 23px auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sandwich_item:nth-child(2)>.sandwich_item_img{
+    background-image: url('../img/eggs.jpg');
+    background-position: left 30% top 0;
+}
+
+.sandwich_item:last-child>.sandwich_item_img{
+    background-image: url('../img/cheese.jpg');
+}
+
+.sandwich_item_body{
+    margin: 0 auto;
+    max-width: 290px;
+}
+
+.item_title{
+    font-family: Alegreya;
+    font-weight: bold;
+    font-size: 30px;
+    color: #a47d5e;
+    margin-bottom: 15px;
+}
+
+.item_text{
+    font-family: 'Proxima Nova';
+    line-height: 20px;
+    color: #56534c;
+    letter-spacing: 1px;
+}
+
+.sandwich_recipe{
+    position: relative;
+}
+
+.sandwich_container{
+    border: 10px solid #fff;
+    max-width: 840px;
+    box-shadow: 0px 5px 10px rgba(105, 80, 58, 0.3);
+}
+
+.sandwich_instruction{
+    top: -2%;
+    position: absolute;
+    right: 10px;
+}
+
+.sandwich_step{
+    background-image: url('../img/field.jpg');
+    background-position: left 5% top 5%;
+    width: 200px;
+    height: 200px;
+    padding-top: 0;
+    font-family: Alegreya;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(105, 80, 58, 0.3);
+}
+
+.sandwich_step:first-child{
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.sandwich_step:nth-child(2){
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.sandwich_step_title{
+    margin: 0;
+    padding: 35px 0;
+}
+
+.sandwich_step_minutes{
+    color: #56534c;
+}
+
+.sandwich_link{
+    background-color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Alegreya;
+    font-weight: bold;
+    color: #dfc691;
+    border: 1px dashed #dfc691;
+    padding: 23px 28px;
+    position: absolute;
+    bottom: -3%;
+    left: -3%;
+    transition: 0.2s;
+}
+
+.sandwich_link:hover{
+    background-color: #dfc691;
+    color: #fff;
+    border-color: #fff;
+}
+
+
+/* ----------------------------------------------------------------- */
+    /* ==================== FOOTER ==================== */
+/* ----------------------------------------------------------------- */
+
+
+.footer{
+    background-color: #f3f1e9;
+    padding: 0px 0px 70px 0px;
+}
+
+.footer_nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_ul{
+    display: flex;
+}
+
+.footer_ul{
+    padding: 30px 0;
+    position: relative;
+}
+
+.footer_ul::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c2beba;
+    position: absolute;
+    top: 0;
+}
+
+.footer_ul::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c2beba;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer_li{
+    text-transform: uppercase;
+    margin: 0px 40px;
+    letter-spacing: 2px;
+}
+
+.footer_link{
+    color: #5d5b50;
+}
+
+.footer_li::after{
+    content: '~';
+    display: inline;
+    position: absolute;
+    margin-left: 35px;
+}
+
+.footer_li:last-child::after{
+    content: '';
+    display: inline;
+    position: absolute;
+    margin-left: 0px;
+}
+
+.footer_logo_link{
+    color: #5d5b50;
+}
+
+
     /* ==================== Контент страницы END ==================== */
 /*============================== BODY END =============================== */
 
@@ -833,6 +1061,26 @@
 
     .section_pancakes{
         padding: 70px 0px 54px 0px;
+    }
+
+    .sandwich_titles{
+        margin-bottom: 30px;
+    }
+
+    .sandwich_content{
+        justify-content: center;
+    }
+
+    .sandwich_ingridients{
+        margin-bottom: 30px;
+    }
+
+    .footer_nav{
+        flex-direction: column;
+    }
+
+    .footer_logo{
+        margin: 30px 0;
     }
 }
     /* ========== ПЛАНШЕТЫ ========== */
@@ -969,6 +1217,22 @@
     }
 }
 
+@media(max-width: 767px){
+    .section_sandwich{
+        padding: 70px 0 70px 0;
+    }
+    .sandwich_instruction{
+        display: flex;
+        position: static;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    .sandwich_link{
+        left: calc(50% - 85.5px);
+    }
+}
+
 @media(max-width: 716px){
     .breakfast_content{
         justify-content: center;
@@ -976,6 +1240,10 @@
 
     .breakfast_menu{
         margin-bottom: 20px;
+    }
+
+    .sandwich_instruction{
+        display: none;
     }
 }
     /* ========== MINI ПЛАНШЕТЫ И СМАРТФОНЫ ========== */
@@ -1029,7 +1297,7 @@
     }
 }
     /* ========== СМАРТФОНЫ ========== */
-@media(max-width: 475px){
+@media(max-width: 495px){
     .header_title{
         font-size: 80px;
     }
@@ -1072,9 +1340,24 @@
     .breakfast_flair_item{
         width: 100%;
     }
+
+    .section_sandwich{
+        padding-bottom: 35px;
+    }
+
+    .footer{
+        padding: 0;
+    }
+
+    .footer_ul{
+        display: none;
+    }
 }
 
 @media(max-width: 425px){
+    .header_description{
+        padding: 0px 5px;
+    }
     .flair_content_title{
         font-size: 38px;
     }
@@ -1116,6 +1399,12 @@
 }
 
     /* ========== МЕЛКИЕ СМАРТФОНЫ ========== */
+
+@media(max-width: 325px){
+    .title_style{
+        font-size: 38px;
+    }
+}
 
 @media(max-width: 320px){
     .header_menu{
