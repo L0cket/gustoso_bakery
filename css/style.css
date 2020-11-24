@@ -695,6 +695,7 @@
 .breakfast_menu_items_info{
     font-family: 'Proxima Nova';
     color: #c2beba;
+    line-height: 1.2em;
 }
 
 .breakfast_price{
