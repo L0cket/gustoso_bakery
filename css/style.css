@@ -13,12 +13,16 @@
 /*=============================== BODY =============================== */
     /* ==================== Контент страницы ==================== */
 
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 .container{
     max-width: 1260px;
     margin: 0 auto;
 }
-
 
 /* ----------------------------------------------------------------- */
     /* ==================== ШАПКА САЙТА ==================== */
@@ -26,6 +30,7 @@
 
 
 .header{
+    min-height: 100vh;
     background-image: url('../img/header_background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,6 +132,21 @@
 
 .header_social_icon:hover{
     transform: scale(1.2);
+}
+
+.burger_link{
+    display: none;
+}
+
+.burger_line{
+    background-color: #fff;
+    width: 25px;
+    height: 2px;
+    margin-bottom: 6px;
+}
+
+.burger_line:last-child{
+    margin-bottom: 0;
 }
 
 .header_content{
@@ -1030,7 +1050,19 @@
 /*============================== BODY END =============================== */
 
 
-/* ==================== @media запросы ==================== */ 
+/* ==================== @media запросы ==================== */
+
+@media(min-width: 2560px){
+    .container{
+        max-width: 1810px;
+    }
+}
+
+@media(max-width: 1600px){
+    .header_content {
+        padding: 185px 0px;
+    }
+}
 
     /* ========== КВАДРАТИКИ ========== */
 @media (max-width: 1300px){
@@ -1096,6 +1128,10 @@
 
     .header_content{
         padding: 112.5px 0;
+    }
+
+    .burger_link{
+        display: block;
     }
 
     .header_elements{
@@ -1235,6 +1271,18 @@
 }
 
 @media(max-width: 767px){
+    .header_menu{
+        padding: 5px 15px 5px 15px;
+    }
+
+    .header_menu_content{
+        padding: 0px 0px 15px 0px;
+    }
+
+    .burger_link{
+        margin-bottom: -5px;
+    }
+
     .section_sandwich{
         padding: 70px 0 70px 0;
     }
@@ -1273,8 +1321,16 @@
         padding: 56px 0;
     }
 
+    .header_title{
+        font-size: 80px;
+    }
+    
+    .header_description{
+        font-size: 20px;
+    }
+
     .header_elements{
-        padding: 50px 0px;
+        padding: 25px 0px;
     }
 
     .section_cakes{
@@ -1315,12 +1371,12 @@
 }
     /* ========== СМАРТФОНЫ ========== */
 @media(max-width: 495px){
-    .header_title{
-        font-size: 80px;
+    .header_content{
+        padding: 28px 0px;
     }
 
-    .header_description{
-        font-size: 22px;
+    .header_title{
+        font-size: 60px;
     }
 
     .cakes_images_row_item{
@@ -1372,9 +1428,6 @@
 }
 
 @media(max-width: 425px){
-    .header_description{
-        padding: 0px 5px;
-    }
     .flair_content_title{
         font-size: 38px;
     }
@@ -1406,6 +1459,13 @@
 }
 
 @media(max-width: 395px){
+    .header_content{
+        padding: 20px 0px;
+    }
+
+    .header_description_bg{
+        margin-bottom: 35px;
+    }
 
     .chef_img{
         margin: 0 10px;
@@ -1419,24 +1479,16 @@
     /* ========== МЕЛКИЕ СМАРТФОНЫ ========== */
 
 @media(max-width: 325px){
+    .header_title{
+        font-size: 55px;
+    }
+
     .title_style{
         font-size: 38px;
     }
 }
 
 @media(max-width: 320px){
-    .header_menu{
-        padding: 5px 5px 25px 5px;
-    }
-
-    .header_content{
-        padding-top: 28px;
-    }
-
-    .header_title{
-        font-size: 60px;
-    }
-
     .header_elements{
         padding: 25px 0px;
     }
