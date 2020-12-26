@@ -170,7 +170,7 @@
 }
 
 .hover_li{
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .hover_li:after{
@@ -181,6 +181,7 @@
     right: 0;
     margin: 0 auto;
     color: #fff;
+    transform: translate(0, 50%);
 }
 
 .hover_li:last-child::after{
@@ -195,6 +196,7 @@
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
+    font-size: 25px;
 }
 
 .hover_link:hover{
